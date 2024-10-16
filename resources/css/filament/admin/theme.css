@@ -1,0 +1,45 @@
+@import '/vendor/filament/filament/resources/css/theme.css';
+@import '../../font.css';
+
+@config 'tailwind.config.js';
+
+@layer utilities {
+    /* Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+}
+
+body {
+    font-family: Inter, 'IRANSansXLight','YekanBakhFaNumRegular', serif;
+}
+
+.fi-btn {
+    padding: .375rem .25rem;
+}
+
+.fi-btn-label {
+    padding-left: .5rem;
+    padding-right: .5rem;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+}
+
+.fi-modal-close-overlay{
+    @apply backdrop-blur-sm;
+}
+
+.fi-dropdown-panel {
+    height: 19rem;
+    @apply overflow-auto no-scrollbar;
+}
+
+.fi-tabs {
+    @apply justify-between;
+}
